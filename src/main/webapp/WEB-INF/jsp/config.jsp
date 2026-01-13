@@ -3,16 +3,15 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Accueil</title>
+<title>Configuration - Admin</title>
 <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 <div class="bg-gradient">
     <div class="container card">
-        <h1>Bienvenue dans le jeu GuessMyNumber !</h1>
-        <form action="start" method="post">
-            <button type="submit">Commencer le jeu</button>
-        </form>
+        <h1>⚙️ Page de configuration (ADMIN)</h1>
+        <p>Accès réservé à l’administrateur</p>
+        <a href="/"><button>Retour</button></a>
     </div>
 </div>
 </body>

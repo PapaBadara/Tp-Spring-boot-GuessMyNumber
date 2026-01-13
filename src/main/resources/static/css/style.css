@@ -2,61 +2,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #6DD5FA, #2980B9);
-    height: 100vh;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
-.container {
-    background: rgba(255, 255, 255, 0.15);
-    padding: 40px 60px;
-    border-radius: 15px;
-    backdrop-filter: blur(6px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-
-h1 {
-    margin-bottom: 25px;
-    font-size: 28px;
-}
-
-.message {
-    font-weight: bold;
-    color: #FFD700; /* jaune vif pour le message d'indice */
-    margin-bottom: 20px;
-}
-
-input[type="number"] {
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: none;
-    width: 60%;
-    margin-bottom: 15px;
-}
-
-button {
-    padding: 12px 25px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #2980B9;
-    background-color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #dfefff;
-    transform: scale(1.05);
-}
-
-/* Dégradé de fond dynamique */
 .bg-gradient {
     background: linear-gradient(135deg, #6DD5FA, #2980B9);
     height: 100vh;
@@ -65,30 +14,30 @@ button:hover {
     align-items: center;
 }
 
-/* Carte jeu / accueil / fin */
-.card {
+.container, .card {
     background: rgba(255, 255, 255, 0.15);
     border-radius: 15px;
     backdrop-filter: blur(10px);
-    color: white;
+    padding: 40px 60px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    max-width: 500px;
+    width: 90%;
 }
 
-/* Animation messages */
-.alert {
-    font-weight: bold;
-    font-size: 1.2rem;
+h1 { margin-bottom: 25px; font-size: 28px; }
+
+.message, .alert { font-weight: bold; font-size: 1.2rem; color: #FFD700; margin-bottom: 20px; }
+
+input[type="number"], input.form-control {
+    padding: 10px; font-size: 16px; border-radius: 5px; border: none; width: 60%; margin-bottom: 15px;
 }
 
-/* Input et bouton */
-input.form-control {
-    font-size: 1.1rem;
+button, button.btn {
+    padding: 12px 25px; font-size: 18px; font-weight: bold; color: #2980B9; background-color: white;
+    border: none; border-radius: 8px; cursor: pointer; transition: transform 0.3s, background-color 0.3s;
 }
 
-button.btn {
-    font-weight: bold;
-    transition: transform 0.2s;
-}
+button:hover, button.btn:hover { background-color: #dfefff; transform: scale(1.05); }
 
-button.btn:hover {
-    transform: scale(1.05);
-}
+ul { list-style: none; padding: 0; }
+ul li { margin-bottom: 15px; }
